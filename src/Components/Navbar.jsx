@@ -44,7 +44,7 @@ function Navbar({searchInput,setSearchInput}){
             <p>Hello,</p>
             <p>{user ? user.username : 'Guest'}</p>
           </NavBtn>
-          <NavBtn onClick={()=>navigate("/orders")}>
+          <NavBtn onClick={() => user ? navigate('/orders') : navigate('/login')}>
             <p>Return</p>
             <p>& Order</p>
           </NavBtn>

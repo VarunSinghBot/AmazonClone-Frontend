@@ -120,6 +120,7 @@ const Banner = styled.div`
         -webkit-mask-image: none;
       }
   }
+}
 `;
 
 const Main = styled.div`
