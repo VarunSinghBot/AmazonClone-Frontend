@@ -63,14 +63,15 @@ const Container = styled.div`
 `;
 
 const Image = styled.div`
-    width: 80%;
+    width: auto;
     height: auto;
     display:flex;
     align-items:center;
     justify-content:center;
     flex:.6;
+    border:1px solid red;
     img{
-        width: auto;
+        width: 100%;
         height: 100%;
     }
 `;
