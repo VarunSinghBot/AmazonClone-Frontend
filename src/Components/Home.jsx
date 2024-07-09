@@ -93,7 +93,7 @@ const Banner = styled.div`
     width: 100%;
     height: 100%;
     margin-top:7dvh;
-    -webkit-mask-image: linear-gradient(
+    mask-image: linear-gradient(
       to bottom,
       rgba(0,0,0,1),
       rgba(0,0,0,.95),
@@ -117,7 +117,7 @@ const Banner = styled.div`
 
       &:nth-child(2) {
         display: block;
-        -webkit-mask-image: none;
+        mask-image: none;
       }
   }
 }
