@@ -12,10 +12,10 @@ const reducer = (state, action) => {
         case 'Add_To_Basket':
             // Check if user is logged in
             if (state.user) { 
-            return {
-                ...state,
-                basket: [...state.basket, action.item]
-            };
+                return {
+                    ...state,
+                    basket: [...state.basket, action.item]
+                };
             } else {
                 console.log('User not authenticated. Redirecting to login.');
                 // Handle redirection or display a message
