@@ -16,11 +16,11 @@ const reducer = (state, action) => {
                 ...state,
                 basket: [...state.basket, action.item]
             };
-        } else {
-            console.log('User not authenticated. Redirecting to login.');
-            // Handle redirection or display a message
-            return state; // Return current state if user is not authenticated
-        }
+            } else {
+                console.log('User not authenticated. Redirecting to login.');
+                // Handle redirection or display a message
+                return state; // Return current state if user is not authenticated
+            }
 
         
         case 'Remove_From_Basket':
